@@ -15,7 +15,6 @@ function getCommonCharacterCount(s1, s2) {
   let a = s1.split('').sort()
   let b = s2.split('').sort()
   const answer = b.reduce((acc, el) => {
-    console.log(a.filter(elFil => el === elFil).length)
     if (
       a.includes(el)
       && acc.length <= a.length
