@@ -11,9 +11,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For n = 152, the output should be 52
  *
  */
-function deleteDigit(/* n */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+function deleteDigit(n) {
+  if (n <= 10) return n / n
+  return Math.floor(n / 100) * 10 + Math.floor(n % 10) > n % 100 ? Math.floor(n / 100) * 10 + Math.floor(n % 10) : n % 100
 }
 
 module.exports = {
