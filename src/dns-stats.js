@@ -31,7 +31,6 @@ function getDNSStats(domains) {
   let temp1 = []
   let temp2 = []
   for (let i = 0; i < digitDomainsOnWord.length; i += 1) {
-
     temp.push(digitDomainsOnWord[i][0])
     result['.' + digitDomainsOnWord[i][0]] = temp.length
     temp1.push(digitDomainsOnWord[i][0] + digitDomainsOnWord[i][1])
