@@ -26,7 +26,6 @@ function renameFiles(names) {
     if (!result.includes(names[i])) {
       result.push(names[i]);
       prev++;
-      console.log(names[i]);
     } else if (result[prev] === names[i]) {
       counter++;
       if (names.find((el) => el === result[prev]).split('(')[1]) {
